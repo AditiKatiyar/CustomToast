@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
-    id 'maven-publish'
+    id 'maven-publish'//
 }
 
 android {
@@ -10,8 +10,8 @@ android {
     defaultConfig {
         minSdk 21
         targetSdk 30
-        versionCode 8
-        versionName "1.0.8"
+        versionCode 9
+        versionName "1.0.9"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -24,11 +24,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_11//
+        targetCompatibility JavaVersion.VERSION_11//
     }
     kotlinOptions {
-        jvmTarget = '11'
+        jvmTarget = '11'//
     }
 }
 
@@ -42,7 +42,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
 
-project.afterEvaluate {
+project.afterEvaluate {//
     publishing {
         publications {
             release(MavenPublication) {

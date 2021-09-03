@@ -3,4 +3,3 @@ jdk:
 install:
   - chmod +x ./gradlew
   - ./gradlew :customtoast:build :customtoast:publishToMavenLocal -x :customtoast:test
-  - find . -name "*.aar"
