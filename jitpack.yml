@@ -2,4 +2,5 @@ jdk:
   - openjdk11
 install:
   - chmod +x ./gradlew
-  - ./gradlew build :customtoast:publishToMavenLocal
+  - ./gradlew :customtoast:build :customtoast:publishToMavenLocal -x :customtoast:test
+  - find . -name "*.aar"
